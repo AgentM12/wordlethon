@@ -2,7 +2,7 @@
 Simple commandline wordle clone written in Python (3.9.6)
 Using `colorama` for command line coloring.
 
-The dictionaries are scraped using [this tool](https://github.com/benjihillard/English-Dictionary-Database/blob/main/english%20Dictionary.csv) and are in no way filtered, except by word length and alphabetical-ness.
+The list of words is obtained from [this GitHub page](https://github.com/dolph/dictionary). Words are only filtered by length.
 
 ## Execution ##
 Install python3 and make sure the library `colorama` is installed.
