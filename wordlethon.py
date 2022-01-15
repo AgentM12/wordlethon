@@ -65,7 +65,7 @@ def play():
 			check_priority = [2] * letters
 			for t in range(len(checks)):
 				for i in range(letters):
-					if checks[t](guessed_word, word_to_guess if t == 0 else remaining_correct_letters, i):
+					if check_priority[i] == 2 and checks[t](guessed_word, word_to_guess if t == 0 else remaining_correct_letters, i):
 						check_priority[i] = t
 						remaining_correct_letters.remove(guessed_word[i])
 
